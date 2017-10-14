@@ -26,4 +26,4 @@ def process_text(text):
     # text = re.sub(url_regex, ' __URL ', text)
 
     text = ' '.join(re.sub("(@[A-Za-z0-9]+)|(http|https|ftp)://[a-zA-Z0-9./]+|#(\w+)", " ", text).split())
-    return text
+    return text.lower()
